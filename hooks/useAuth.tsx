@@ -52,4 +52,6 @@ const useAuth = () => {
     };
 
     return {user, isFetch, redirectIfAuthenticated, loginWithGoogle, loginWithGithub};
-}
+};
+
+export default useAuth;
