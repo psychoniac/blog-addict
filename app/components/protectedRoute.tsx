@@ -14,7 +14,7 @@ const ProtectedRoute = ({children} : {children: React.ReactNode}) => {
         }
     }, [user, isFetch, router]);
 
-    if(isFetch) return <section className="w-full h-screen flex items-center justify-center">
+   if(!isFetch) return <section className="w-full h-screen flex items-center justify-center">
         <h2 className="text-xl">Chargement en cours...</h2>
     </section>
 
